@@ -1,22 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <title>Document</title>
 </head>
 <body>
-    <h1>
+    <h1 class='home'>
         Olá Mundo
     </h1>
 
-    <h2>
+    <h2 class='home2'>
         Olá Mundo
     </h2>
 
-    <h3>
+    <h3 class='home3'>
         Olá Mundo
     </h3>
+
+    <img src="{% static 'img/django-logo.jpeg' %}" alt="My image">
+
 </body>
 </html>

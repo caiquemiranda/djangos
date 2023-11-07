@@ -32,7 +32,7 @@ def fname(request, nome):
 def fname2(request, nome):
     nome = lerDoBanco(nome)['nome']
     idade = lerDoBanco(nome)['idade']
-
+    print(nome, idade)
     return render(request, "pessoa.html", 
                   {'v_nome': nome,
                    'v_idade': idade, 
