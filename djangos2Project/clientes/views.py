@@ -6,3 +6,6 @@ from .models import Person
 def persons_list(request):
     person = Person.objects.all()
     return render(request, 'person.html', {'persons': person})
+
+def person_new(request):
+    pass
